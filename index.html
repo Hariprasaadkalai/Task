@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Behance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section>
+        <ul>
+            <b>
+                <li><a><img style="height: 35px"  src="images/logo.jfif"></a></li>
+                <li><a href="index.html">Discover</a></li>
+                <li><a href="#Livestream">Livestreams</a></li>
+                <li><a href="#Job">Jobs</a></li>
+            </b>
+            <button class="but1" href="#Login">Login
+            </button>
+            <button class="but" href="#signup">signup
+            </button>
+
+        </ul>
+        <div class="search">
+            <form action="#">
+                <button>
+                    <i class="fa fa-search" style="font-size: 18px;"></i>
+                </button>
+                <input type="text" placeholder=" Search the creative world at work" name="search">
+                <b><a href="#Project" class="secnav">Projects</a>
+                    <a href="index.html" class="secnav active">Images</a>
+                    <a href="#Project" class="secnav">Prototypes</a>
+                    <a href="#Project" class="secnav">People</a>
+                    <a href="#Project" class="secnav">Moodboards</a></b>
+            </form>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sort
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li class="list active" data-filter="all">All</li><br>
+                <li class="list" data-filter="mobile">Mobile</li><br>
+                <li class="list" data-filter="camera">Camera</li><br>
+                <li class="list" data-filter="watch">Watch</li><br>
+                <li class="list" data-filter="shoe"> Shoe</li><br>
+                <li class="list" data-filter="headphone">Headphone</1i><br>
+            </ul>
+            <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown1">Photography
+                <span class="caret"></span></button>
+
+            <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown2">Tools
+                <span class="caret"></span></button>
+
+            <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown3">camera
+                    <span class="caret"></span></button>
+
+            <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown4">Lens
+                    <span class="caret"></span></button>
+
+            <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown5">Exposure
+                    <span class="caret"></span></button>
+
+            <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown6">Focal length
+                    <span class="caret"></span></button>
+
+            <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown7">Image type
+                    <span class="caret"></span></button>
+
+            <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown8">NFTs
+                    <span class="caret"></span></button>
+        </div><br>
+        <div class="product">
+            <div class="itemBox mobile">
+                <img src="images/mobile1.jpg">
+            </div>
+            <div class="itemBox camera">
+                <img src="images/camera1.jpg">
+            </div>
+            <div class="itemBox watch">
+                <img src="images/watch1.jpg">
+            </div>
+            <div class="itemBox shoe">
+                <img src="images/shoe1.jpg">
+            </div>
+            <div class="itemBox headphone">
+                <img src="images/headphone1.jpg">
+            </div>
+            <div class="itemBox mobile">
+                <img src="images/mobile2.jpg">
+            </div>
+            <div class="itemBox camera">
+                <img src="images/camera2.jpg">
+            </div>
+            <div class="itemBox watch">
+                <img src="images/watch2.jpg">
+            </div>
+            <div class="itemBox shoe">
+                <img src="images/shoe2.jpg">
+            </div>
+            <div class="itemBox headphone">
+                <img src="images/headphone2.jpg">
+            </div>
+            <div class="itemBox mobile">
+                <img src="images/mobile3.jpg">
+            </div>
+            <div class="itemBox camera">
+                <img src="images/camera3.jpg">
+            </div>
+            <div class="itemBox watch">
+                <img src="images/watch3.jpg">
+            </div>
+            <div class="itemBox shoe">
+                <img src="images/shoe3.jpg">
+            </div>
+            <div class="itemBox headphone">
+                <img src="images/headphone3.jpg">
+            </div>
+            <div class="itemBox mobile">
+                <img src="images/mobile4.jpg">
+            </div>
+            <div class="itemBox watch">
+                <img src="images/watch4.jpg">
+            </div>
+            <div class="itemBox shoe">
+                <img src="images/shoe4.jpg">
+            </div>
+            <div class="itemBox headphone">
+                <img src="images/headphone4.jpg">
+            </div>
+            <div class="itemBox mobile">
+                <img src="images/mobile5.jpg">
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function() {
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $(".dropdown-menu li").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('.list').click(function() {
+                const value = $(this).attr('data-filter');
+
+                if (value == 'all') {
+                    $('.itemBox').show('1000');
+
+                } else {
+
+                    $('.itemBox').not('.' + value).hide('1000');
+
+                    $('.itemBox').filter('.' + value).show('1000');
+                }
+            })
+            $('.list').click(function() {
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+        })
+    </script>
+</body>
+
+</html>

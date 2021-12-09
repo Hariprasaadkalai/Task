@@ -1,0 +1,138 @@
+    @import url('https://fonts.googleapis.com/ css?family=Poppins: 200, 300, 400, 500, 600, 700, 800, 900&display-swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #myInput {
+        padding: 20px;
+        margin-top: -6px;
+        border-radius: 0;
+        background: #fffcfc;
+    }
+    
+    .btn {
+        margin-left: 18px;
+        padding: 3px;
+        border-color: black;
+        border: 2px;
+        border-radius: 10px;
+        color: rgb(8, 8, 8);
+        background-color: #f4f4f5;
+    }
+    
+    .but {
+        margin-top: 9px;
+        margin-left: 15px;
+        padding: 3px;
+        border-color: black;
+        border: 2px;
+        border-radius: 10px;
+        color: rgb(250, 246, 246);
+        background-color: #3184e2;
+    }
+    
+    .but1 {
+        margin-top: 9px;
+        margin-left: 45%;
+        padding: 3px;
+        border-color: black;
+        border: 4px;
+        border-radius: 10px;
+        color: rgb(17, 17, 17);
+        background-color: #f2f4f7;
+    }
+    
+    .dropdown {
+        cursor: pointer;
+    }
+    
+    .secnav {
+        color: black;
+        padding: 20px;
+    }
+    
+    .search input[type=text] {
+        width: 40%;
+        height: 30px;
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        border: 5px;
+    }
+    
+    .search {
+        float: center;
+        margin: 7px;
+        color: black;
+        border: 5px;
+    }
+    
+    .search button {
+        background-color: #ffffff;
+        color: #080808;
+        float: center;
+        padding: 5px 10px;
+        margin-left: 5px;
+        margin-right: 1px;
+        font-size: 12px;
+        border: 5px;
+        cursor: pointer;
+    }
+    
+    section {
+        padding: 20px;
+        width: 1280px;
+        margin: 40px auto;
+    }
+    
+    .product {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .product .itemBox {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+    }
+    
+    .product .itemBox img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .list {
+        margin-left: 10px;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: rgb(15, 15, 15);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        color: rgb(49, 209, 17);
+    }
